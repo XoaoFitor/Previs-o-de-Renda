@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 sns.set(context='talk', style='ticks')
 
-renda = pd.read_csv('/Users/Victor Hugo/Downloads/original/projeto 2/input/previsao_de_renda.csv')
+renda = pd.read_csv('previsao_de_renda.csv')
 
 st.set_page_config(
      page_title="Previsão de renda",
@@ -92,4 +92,5 @@ with st.container():
      plt.figure(figsize=(1, 2))
      fig = px.histogram(renda, x='tipo_renda')
      st.plotly_chart(fig)
+
 
